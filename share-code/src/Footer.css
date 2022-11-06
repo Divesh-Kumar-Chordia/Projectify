@@ -1,0 +1,23 @@
+.footer{
+height: 60px;
+display: flex;
+align-items: center;
+background-color: black;
+height:30px;
+margin: 0;
+clear: both;
+width:100%;
+position: relative;
+}
+.footer_left{
+    display:flex;
+    align-self: flex-end;
+    margin-bottom: 15px;
+}
+
+.footer_right{
+    display:flex;
+    width: 100px;
+    margin: 0 20px;
+
+}

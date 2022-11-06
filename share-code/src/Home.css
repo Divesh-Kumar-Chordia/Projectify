@@ -1,0 +1,48 @@
+.home{
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    top: 8%;
+    overflow: hidden;
+    z-index: 0;
+}
+.code_area{
+    height: inherit;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid rgb(9, 9, 9);
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
+    background-color:rgb(33,33,33);
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    color: rgb(252, 252, 252);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(211, 12, 12, 0);
+    -webkit-text-size-adjust: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+button {
+    background: none repeat scroll 0 0 rgb(33,33,33) ;
+    border: medium none;
+    color: #FFFFFF;
+    position:absolute;
+    top: 1%;
+    right: 0;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    z-index: 1;
+}
