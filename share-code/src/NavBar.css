@@ -1,0 +1,47 @@
+.navbar{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+.header_nav{
+    display:flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left:10px;
+    margin-right:10px;
+    color:#ffffffff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Grand+Hotel&display=swap');
+.header_optionLineOne {
+    font-weight: 200;
+    font-size: 12px;
+    color: #ffffffff;
+    font-family: 'Calistoga', cursive;
+}
+
+.header_optionLineTwo {
+    font-weight: 400;
+    font-size: 18px;
+    color:#ff641a;
+    font-family: 'Grand Hotel', cursive;
+
+}
+.header_logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+
+}
