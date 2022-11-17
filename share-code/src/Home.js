@@ -6,7 +6,7 @@ function Home() {
   const [state, setState]=useState(null);
   function change(props){
   setState(props.target.value);
-
+  
   }
   const data={
     text:state
@@ -15,7 +15,8 @@ function Home() {
   async function submitHandler(event){
     event.preventDefault();
   const response = await axios.post("http://localhost:8800",data.text);
-  
+ console.log(response);
+
 }
   return (
     <form  onSubmit={submitHandler} className="form home">

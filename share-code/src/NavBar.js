@@ -6,7 +6,6 @@ import App from "./App";
 import Login from "./Login";
 import Register from "./Register";
 function NavBar() {
-
     return(
         <div className="navbar">
         {/*
@@ -14,17 +13,14 @@ function NavBar() {
 <Routes>
             <Route path={App} element={
             <img src={logo} className="header_logo" alt=''/>
-
         } />
         <Route path={Login} element={
-
-            
             <span
             className="header_optionLineOne">
             Login
             </span>
                 } />
-             <Route path={Register} element={
+            <Route path={Register} element={
             <span
             className="header_optionLineTwo">
                 Register
@@ -33,10 +29,7 @@ function NavBar() {
                 } />
             </Routes>
         </Router>
-    
-
         */}
-    
                 <img src={logo} className="header_logo" alt=''/>
             <div className="header_nav">
             <div className="header_option">
@@ -50,7 +43,7 @@ function NavBar() {
             </span>
             </div>
         </div>
-        
+
         </div>
 
     )
