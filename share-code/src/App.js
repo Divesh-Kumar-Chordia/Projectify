@@ -22,7 +22,7 @@ function App() {
       </BrowserRouter>
 
 
-      <HomeNew/>
+
       <Footer/>
     </div>
   );

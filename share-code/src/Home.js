@@ -2,9 +2,12 @@ import React,{useState,useEffect} from 'react'
 import "./Home.css";
 import SaveIcon from '@material-ui/icons/Save';
 import axios from "axios";
+import {useNavigate} from "react-router-dom"
 
 function Home() {
   const [state, setState]=useState(null);
+  const navigate = useNavigate();
+
   function change(props){
   setState(props.target.value);
   }
@@ -16,10 +19,14 @@ function Home() {
     event.preventDefault();
   const response = await axios.post("http://localhost:8800",data.text);
  console.log(response);
-
+    navigate(`/${response.data.uniqueCode}`);
  
 
 }
+
+
+
+
   return (
     <form  onSubmit={submitHandler} className="form home">
     <textarea

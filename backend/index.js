@@ -72,7 +72,6 @@ app.post("/:uniqueCode",(req,res)=>{
 app.get("/:uniqueCode",(req,res)=>{
     const uniqueCode=req.params.uniqueCode;
     find(uniqueCode,res);
-    console.log(res.data);
 })
 
 
@@ -80,7 +79,9 @@ app.get("/:uniqueCode",(req,res)=>{
 async function find(uniqueCode,res){
     const user= await User.findOne({uniqueCode:uniqueCode});
     if(user){
+        console.log(res.data);
         res.send(user);
+
     }
 }
 
