@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import "./Home.css";
 import SaveIcon from '@material-ui/icons/Save';
-import axios from "axios"
+import axios from "axios";
+
 function Home() {
   const [state, setState]=useState(null);
   function change(props){
   setState(props.target.value);
-  
   }
   const data={
     text:state
@@ -16,6 +16,8 @@ function Home() {
     event.preventDefault();
   const response = await axios.post("http://localhost:8800",data.text);
  console.log(response);
+
+ 
 
 }
   return (

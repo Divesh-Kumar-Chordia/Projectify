@@ -3,8 +3,6 @@ import logo from "./images/logoBlack.png"
 import "./NavBar.css";
 import  {BrowserRouter as Router,Routes, Route} from  "react-router-dom";
 import App from "./App";
-import Login from "./Login";
-import Register from "./Register";
 function NavBar() {
     return(
         <div className="navbar">

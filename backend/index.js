@@ -62,11 +62,19 @@ async function store(data,uniqueCode,res) {
     await user.save();
 res.send(user);
     }
+
+
 app.post("/:uniqueCode",(req,res)=>{
     const uniqueCode=req.params.uniqueCode;
     find(uniqueCode,res);
-    
+
 })
+app.get("/:uniqueCode",(req,res)=>{
+    const uniqueCode=req.params.uniqueCode;
+    find(uniqueCode,res);
+    console.log(res.data);
+})
+
 
 
 async function find(uniqueCode,res){
